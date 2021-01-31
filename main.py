@@ -7,13 +7,6 @@ from collections import defaultdict
 import subprocess
 import os
 
-_print = print
-
-
-def print(*args, **kwargs):
-    _print(*args, file=sys.stderr, **kwargs)
-
-
 def make_formatter(argline):
     command = shlex.split(argline)
 
