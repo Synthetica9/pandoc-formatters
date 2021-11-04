@@ -25,7 +25,7 @@ def make_formatter(argline):
 
 def null_formatter():
     def _formatter(input):
-        return input, False
+        return input
     return _formatter
 
 
